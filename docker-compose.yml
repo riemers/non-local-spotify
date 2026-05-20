@@ -1,0 +1,18 @@
+services:
+  non-local-spotify:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      TZ: Europe/Amsterdam
+      ENABLE_CRON: ${ENABLE_CRON:-true}
+      SPOTIFY_TOKEN_PATH: /data/spotify-tokens.json
+      TRACK_CACHE_PATH: /data/track-cache.json
+    volumes:
+      - spotify-data:/data
+
+volumes:
+  spotify-data:

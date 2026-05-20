@@ -1,0 +1,20 @@
+{
+  "name": "non-local-spotify",
+  "version": "1.0.0",
+  "description": "Create Spotify playlists from chart sources without detected Dutch tracks.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "sync": "node src/sync.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "express": "latest",
+    "express-session": "latest"
+  }
+}

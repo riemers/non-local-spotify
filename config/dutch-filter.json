@@ -1,0 +1,11 @@
+{
+  "trackIds": [],
+  "artists": ["Lil Kleine", "Justen de Wildt", "Ronnie Flex", "LA$$A"],
+  "titleWords": [],
+  "tracks": [
+    {
+      "artist": "Example Artist",
+      "title": "Example Track"
+    }
+  ]
+}
